@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Navbar Styles */
+.header {
+    background: #0047a4;
+    color: white;
+    padding: 1rem 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+}
+
+a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(22, 123, 255);
+    text-decoration: none;
+}
+
+.navbar-brand a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #21a2fe;
+}
+
+/*responsive disgn starts here*/
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+
+    .about-me h1 {
+        font-size: 2rem;
+    }
+
+    .about-me p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .profile-photo {
+        width: 100px;
+    }
+
+    .about-me h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-me p {
+        font-size: 0.8rem;
+    }
+}

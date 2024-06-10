@@ -1,0 +1,133 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: 2000px 1200px;
+}
+
+body{
+    margin:0; /* removes gap at top of page */
+}
+.about-me {
+    padding: 2rem 0;
+    text-align: left; /* Align text to the left */
+    background: #0044ff;
+    color: white;
+}
+
+.about-me h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.profile-photo {
+    float: left; /* Float the image to the left */
+    margin-right: 1rem; /* Space between image and text */
+    width: 280px; /* Adjust as needed */
+    height: auto;
+    border-radius: 2rem;
+}
+
+.about-me p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+a {
+    color:rgb(239, 240, 243);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(22, 123, 255);
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+/*responsive disgn starts here*/
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+
+    .about-me h1 {
+        font-size: 2rem;
+    }
+
+    .about-me p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .profile-photo {
+        width: 100px;
+    }
+
+    .about-me h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-me p {
+        font-size: 0.8rem;
+    }
+}
